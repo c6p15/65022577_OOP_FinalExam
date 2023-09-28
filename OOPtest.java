@@ -15,8 +15,6 @@ class main{
         timmyProjects.add(timProject1);
         Employee timmy = new Employee("Tim", 50.11, "Front/End", "0002", timmyProjects);
 
-        
-
         tommy.ShowDetails();
         timmy.ShowDetails();
     }
@@ -99,9 +97,6 @@ class Employee implements Person, Job{
         this.EmpID = newID;
     }
 
-
-
-
     void ShowDetails(){
         System.out.println("*************");
         System.out.println("Name : "+this.Name);
@@ -113,7 +108,4 @@ class Employee implements Person, Job{
             System.out.println("     "+project.ProjectName+" : "+project.Description);
         }
     }
-    
-
-
 }
