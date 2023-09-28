@@ -6,14 +6,16 @@ class main{
         Project tomProject1 = new Project("Web A", "Developing a web application.");
         Project tomProject2 = new Project("Mobile app A", "Developing a moblie app.");
         ArrayList<Project> tommyProjects = new ArrayList<>();
-        tommyProjects.add(tomProject1);
-        tommyProjects.add(tomProject2);
+        
         Employee tommy =  new Employee("Tom", 25.02, "UX/UI", "0001", tommyProjects);
+        tommy.AddProject(tomProject1);
+        tommy.AddProject(tomProject2);
 
         Project timProject1 = new Project("Web A", "Developing a web application.");
         ArrayList<Project> timmyProjects = new ArrayList<>();
-        timmyProjects.add(timProject1);
+        
         Employee timmy = new Employee("Tim", 50.11, "Front/End", "0002", timmyProjects);
+        timmy.AddProject(timProject1);
 
         tommy.ShowDetails();
         timmy.ShowDetails();
